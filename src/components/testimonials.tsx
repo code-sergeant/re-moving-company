@@ -19,18 +19,18 @@ import { Heading, Subheading } from './text'
 
 const testimonials = [
   {
-    img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    img: '/',
+    name: 'Steven',
+    title: 'Menifee, CA',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'These guys did such a great job. They were very careful with our furniture and were able to configure everything to fit in the truck.',
   },
   {
-    img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    img: '/',
+    name: 'Justin',
+    title: 'Hemet, CA',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'They made my move so easy. I was able to get everything done in a few hours.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
@@ -194,7 +194,7 @@ export function Testimonials() {
         <div ref={setReferenceWindowRef}>
           <Subheading>What everyone is saying</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            Helping you move from 
           </Heading>
         </div>
       </Container>
