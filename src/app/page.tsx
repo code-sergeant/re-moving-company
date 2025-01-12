@@ -6,6 +6,7 @@ import { Gradient } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Testimonials } from '@/components/testimonials'
 import { Heading } from '@/components/text'
+import { PuzzlePieceIcon, ShieldCheckIcon, TruckIcon } from '@heroicons/react/24/solid'
 import PhoneIcon from '@heroicons/react/24/solid/PhoneIcon'
 import type { Metadata } from 'next'
 
@@ -76,34 +77,34 @@ function BentoSection() {
         We can help!
       </Heading>
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2 items-center">
         <BentoCard
           eyebrow="packing"
           title="We keep your items safe and secure"
           description="We offer a wide range of packing services to meet your needs. We are experts in packing and can keep your items safe and secure during the move."
           graphic={
-            <img src='/company/safeloading.jpg' alt='Safe Loading' className='h-96 rounded-4xl' />
+            <ShieldCheckIcon className="size-32" />
           }
-          className="rounded-4xl lg:col-span-3"
+          className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center"
         />
         <BentoCard
           eyebrow="loading "
           title="We are moving truck tetris masters"
           description="We can help with loading and unloading your items. We are experts in loading and unloading and can keep your items safe and secure during the move."
           graphic={
-            <img src='/company/trucktetris.jpg' alt='Truck Tetris' className='h-96 rounded-4xl' />
+            <PuzzlePieceIcon className="size-32" />
           }
-          className="rounded-4xl lg:col-span-3"
+          className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center"
         />
         <BentoCard
           eyebrow="unloading "
           title="We'll have you moved in no time!"
           description="We can help with loading and unloading your items. We are experts in loading and unloading and can keep your items safe and secure during the move."
           graphic={
-            <div className="h-80 bg-[url(/company/dauntingmove.png)] bg-[size:560px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <TruckIcon className="size-32" />
           }
           fade={['bottom']}
-          className="rounded-4xl lg:col-span-3"
+          className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center text-blue-800"
         />
       </div>
     </Container>
