@@ -22,7 +22,7 @@ function Hero() {
         <Navbar />
         <div className="p-16 pb-24">
           <h1 className="font-display text-balance text-4xl/[0.9] font-medium tracking-tight text-white sm:text-7xl/[0.8] md:text-8xl/[0.8]">
-            We Move You From A to Z!
+            Moving? We can help!
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-white/80 sm:text-2xl/8">
             We are a{' '}
@@ -51,39 +51,17 @@ function Hero() {
     </div>
   )
 }
-function FeatureSection() {
-  return (
-    <div>
-      <Container>
-        <div className="mb-16 flex flex-col items-center gap-8 md:flex-row">
-          <Heading as="h2" className="w-full text-end">
-            You don&apos;t have to do it alone...
-          </Heading>
-          <img
-            src="/company/dauntingmove.png"
-            alt="Daunting Move"
-            className="w-full rounded-4xl sm:h-auto md:w-1/2"
-          />
-        </div>
-      </Container>
-    </div>
-  )
-}
 
 function BentoSection() {
   return (
     <Container>
-      <Heading as="h3" className=" max-w-3xl">
-        We can help!
-      </Heading>
-
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2 items-center">
         <BentoCard
           eyebrow="packing"
           title="We keep your items safe and secure"
           description="We offer a wide range of packing services to meet your needs. We are experts in packing and can keep your items safe and secure during the move."
           graphic={
-            <ShieldCheckIcon className="size-32" />
+            <ShieldCheckIcon className="size-32 text-blue-900" />
           }
           className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center"
         />
@@ -92,7 +70,7 @@ function BentoSection() {
           title="We are moving truck tetris masters"
           description="We can help with loading and unloading your items. We are experts in loading and unloading and can keep your items safe and secure during the move."
           graphic={
-            <PuzzlePieceIcon className="size-32" />
+            <PuzzlePieceIcon className="size-32 text-blue-900" />
           }
           className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center"
         />
@@ -101,10 +79,10 @@ function BentoSection() {
           title="We'll have you moved in no time!"
           description="We can help with loading and unloading your items. We are experts in loading and unloading and can keep your items safe and secure during the move."
           graphic={
-            <TruckIcon className="size-32" />
+            <TruckIcon className="size-32  text-blue-900" />
           }
           fade={['bottom']}
-          className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center text-blue-800"
+          className="rounded-4xl py-10 lg:col-span-3 flex items-center justify-center "
         />
       </div>
     </Container>
@@ -117,8 +95,7 @@ export default function Home() {
       <Hero />
       <main>
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-14">
-          <FeatureSection />
-          <BentoSection />
+           <BentoSection />
         </div>
       </main>
       <Testimonials />

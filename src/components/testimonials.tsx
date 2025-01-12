@@ -147,9 +147,9 @@ export function Testimonials() {
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading>What everyone is saying</Subheading>
+          <Subheading>Testimonials</Subheading>
           <Heading as="h3" className="mt-2">
-            Helping you move from 
+            What our customers say
           </Heading>
         </div>
       </Container>
