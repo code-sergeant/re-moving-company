@@ -24,7 +24,7 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book Online
+              Book Online 
             </a>
           </PlusGridItem>
         </PlusGridRow>

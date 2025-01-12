@@ -38,7 +38,7 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book Online with U-Haul
+              Book Online
             </Button>
             <Button href="tel:(626) 735-7308" variant="outline">
               <PhoneIcon className="size-4" />
