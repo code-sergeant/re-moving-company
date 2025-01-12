@@ -126,25 +126,6 @@ function TestimonialCard({
   )
 }
 
-function CallToAction() {
-  return (
-    <div>
-      <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
-      </p>
-      <div className="mt-2">
-        <Link
-          href="#"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
-        >
-          Get started
-          <ArrowLongRightIcon className="size-5" />
-        </Link>
-      </div>
-    </div>
-  )
-}
 
 export function Testimonials() {
   let scrollRef = useRef<HTMLDivElement | null>(null)
@@ -198,8 +179,7 @@ export function Testimonials() {
       </div>
       <Container className="mt-16">
         <div className="flex justify-between">
-          <CallToAction />
-          <div className="hidden sm:flex sm:gap-2">
+           <div className="hidden sm:flex sm:gap-2">
             {testimonials.map(({ name }, testimonialIndex) => (
               <Headless.Button
                 key={testimonialIndex}
